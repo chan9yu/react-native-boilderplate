@@ -1,0 +1,9 @@
+echo "🔍 Running lint checks..."
+
+if npx lint-staged; then
+  echo "✅ Lint checks passed."
+  exit 0
+else
+  echo "❌ Lint checks failed."
+  exit 1
+fi
