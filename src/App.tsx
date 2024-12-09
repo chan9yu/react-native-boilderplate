@@ -1,15 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+
+import RootNavigation from './navigations/RootNavigation';
 
 export default function App() {
 	return (
-		<View style={styles.container}>
-			<Text>App</Text>
-		</View>
+		<SafeAreaProvider>
+			<NavigationContainer>
+				<RootNavigation />
+			</NavigationContainer>
+		</SafeAreaProvider>
 	);
 }
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1
-	}
-});
