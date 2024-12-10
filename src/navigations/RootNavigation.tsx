@@ -1,9 +1,10 @@
-import RootStack from './stacks/RootStack';
+import RootDrawer from './drawers/RootDrawer';
 
 export default function RootNavigation() {
 	return (
 		<>
-			<RootStack />
+			<RootDrawer />
+			{/* <RootStack /> */}
 		</>
 	);
 }
